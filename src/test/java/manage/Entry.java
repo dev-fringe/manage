@@ -27,7 +27,6 @@ class Entry {
 	}
 
 	public String toString() {
-		return "Entry [key=" + key + ", text=" + text + "]";
+		return  key + "=" + text;
 	}
-
 }

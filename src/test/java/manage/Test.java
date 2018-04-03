@@ -9,7 +9,7 @@ public class Test {
 	public static void main(String[] args) throws FileNotFoundException {
 		XStream xStream = new XStream();
 		xStream.processAnnotations(Properties.class);
-		Object readObject = xStream.fromXML(new File("pns-ums-bizMatrix.xml"));
-		System.out.println("Object loaded by xstream: " + readObject);
+		Properties prop = (Properties) xStream.fromXML(new File("data.xml"));
+		System.out.println("Properties loaded : " + prop);
 	}
 }

@@ -20,7 +20,7 @@ public class Properties {
 	}
 
 	public String toString() {
-		return " [entry=" + entry + "]";
+		return  entry.toString();
 	}
 
 }
